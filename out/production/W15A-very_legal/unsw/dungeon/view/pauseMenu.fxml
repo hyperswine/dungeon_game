@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="264.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imgPaused" fitHeight="50.0" fitWidth="195.0" layoutX="36.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/textGamePaused.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnResume" fitHeight="49.0" fitWidth="131.0" layoutX="68.0" layoutY="91.0" onMouseClicked="#handleResume" onMouseEntered="#handleResumeHover" onMouseExited="#handleResumeExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnResumeIdle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnGoals" fitHeight="49.0" fitWidth="131.0" layoutX="67.0" layoutY="146.0" onMouseClicked="#handleGoals" onMouseEntered="#handleGoalsHover" onMouseExited="#handleGoalsExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnGoalsIdle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnTutorials" fitHeight="49.0" fitWidth="131.0" layoutX="67.0" layoutY="201.0" onMouseClicked="#handleTut" onMouseEntered="#handleTutHover" onMouseExited="#handleTutExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnTutorialsIdle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnMenu" fitHeight="49.0" fitWidth="131.0" layoutX="68.0" layoutY="255.0" onMouseClicked="#handleMenu" onMouseEntered="#handleMenuHover" onMouseExited="#handleMenuExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnMainMenuIdle.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

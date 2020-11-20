@@ -1,0 +1,11 @@
+*.class
+*.log
+hs_err_pid*
+/bin/
+/lib/
+/build/
+/.idea/
+/.vscode/
+*gradle*
+/.gradle
+loc.sh

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imgBackground" fitHeight="499.0" fitWidth="665.0" layoutX="-34.0" layoutY="-31.0" pickOnBounds="true" />
+      <ImageView fx:id="btnTutorials" fitHeight="40.0" fitWidth="160.0" layoutX="240.0" layoutY="279.0" onMouseClicked="#handleTutorials" onMouseEntered="#handleTutHover" onMouseExited="#handleTutExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnTutorialsIdle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnPlay" fitHeight="100.0" fitWidth="200.0" layoutX="201.0" layoutY="26.0" onMouseClicked="#handlePlay" onMouseEntered="#handlePlayHover" onMouseExited="#handlePlayExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnPlayIdle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnSettings" fitHeight="40.0" fitWidth="160.0" layoutX="240.0" layoutY="225.0" onMouseClicked="#handleSettings" onMouseEntered="#handleSettingsHover" onMouseExited="#handleSettingsExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnSettingsIdle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnExit" fitHeight="40.0" fitWidth="160.0" layoutX="240.0" layoutY="333.0" onMouseClicked="#handleExit" onMouseEntered="#handleExitHover" onMouseExited="#handleExitExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnExitIdle.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblStatus" alignment="CENTER" layoutX="1.0" layoutY="391.0" prefHeight="26.0" prefWidth="601.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnSelectLevel" fitHeight="50.0" fitWidth="200.0" layoutX="227.0" layoutY="138.0" onMouseClicked="#handleSelect" onMouseEntered="#handleSelectHover" onMouseExited="#handleSelectExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnSelectLevelIdle.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblLevel" alignment="TOP_CENTER" layoutX="2.0" layoutY="188.0" prefHeight="26.0" prefWidth="601.0" text="Level.json" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

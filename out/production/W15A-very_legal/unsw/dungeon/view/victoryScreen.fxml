@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imgVictory" fitHeight="141.0" fitWidth="341.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/victoryText.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnMenu" fitHeight="46.0" fitWidth="140.0" layoutX="110.0" layoutY="112.0" onMouseClicked="#handleMenu" onMouseEntered="#handleMenuHover" onMouseExited="#handleMenuExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnMainMenuIdle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnExit" fitHeight="46.0" fitWidth="140.0" layoutX="110.0" layoutY="164.0" onMouseClicked="#handleExit" onMouseEntered="#handleExitHover" onMouseExited="#handleExitExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/btnExitIdle.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

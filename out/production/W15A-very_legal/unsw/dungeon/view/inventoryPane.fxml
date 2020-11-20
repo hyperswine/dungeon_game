@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="84.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imgBackground" fitHeight="84.0" fitWidth="583.0" opacity="0.95" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/inventoryBack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCombat" fitHeight="50.0" fitWidth="50.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgSlot1" fitHeight="40.0" fitWidth="40.0" layoutX="103.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgSlot2" fitHeight="40.0" fitWidth="40.0" layoutX="169.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgSlot3" fitHeight="40.0" fitWidth="40.0" layoutX="235.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgSlot4" fitHeight="40.0" fitWidth="40.0" layoutX="300.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgSlot5" fitHeight="40.0" fitWidth="40.0" layoutX="366.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblTreasureCount" alignment="CENTER" layoutX="472.0" layoutY="3.0" prefHeight="17.0" prefWidth="26.0" text="0" />
+      <ProgressBar fx:id="progressDurability" layoutX="20.0" layoutY="54.0" prefHeight="9.0" prefWidth="50.0" progress="0.0" />
+   </children>
+</Pane>
