@@ -23,7 +23,7 @@ public class GoalComposite implements GoalComponent {
 
     /**
      * Create a composite goalcomponent type object.
-     * 
+     *
      * @param subConditions AND, OR only.
      */
     public GoalComposite(GoalType subConditions) {
@@ -73,7 +73,7 @@ public class GoalComposite implements GoalComponent {
     @Override
     public BooleanProperty isSatisfied() {
         boolean flag = false;
-    
+
         switch (getGoal()) {
             case AND:
                 flag = true;
