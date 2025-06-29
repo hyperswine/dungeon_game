@@ -181,8 +181,8 @@ public class Dungeon {
     }
 
     /**
-     * Call update() on all enemies. Trigger them with the utmost passion. 
-     * Broadcast your location. Dont tell, show them your eagerness to draw as 
+     * Call update() on all enemies. Trigger them with the utmost passion.
+     * Broadcast your location. Dont tell, show them your eagerness to draw as
      * much blood as possible.
      */
     public void updateAllEnemies(){
@@ -209,7 +209,7 @@ public class Dungeon {
             // Tear the entity apart
             int a = e.getX();
             int b = e.getY();
-            
+
             if(Math.abs(x-a) <= radius && Math.abs(y-b) <= radius)
                 e.setIsInWorld(false);
         }
