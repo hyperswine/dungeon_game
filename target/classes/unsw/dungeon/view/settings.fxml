@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="352.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="2.0" layoutY="82.0" prefHeight="413.0" prefWidth="352.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Audio">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Slider fx:id="sliderGameVol" layoutX="22.0" layoutY="38.0" onMouseReleased="#handleGameVolUpdate" value="100.0" />
+                        <Label layoutX="22.0" layoutY="21.0" text="Game Volume" />
+                        <Label layoutX="22.0" layoutY="66.0" text="UI Volume" />
+                        <Slider fx:id="sliderUIVol" layoutX="22.0" layoutY="83.0" onMouseReleased="#handleUIVolUpdate" value="100.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Controls">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="49.0" text="More coming soon (TM)!" />
+                        <CheckBox fx:id="checkControlsOnUI" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#handleControlsOnUI" prefHeight="17.0" prefWidth="323.0" selected="true" text="Show controls on inventory UI" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Data">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnResetData" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleResetData" text="Reset all Settings and Data" />
+                        <Label layoutX="14.0" layoutY="58.0" text="WARNING: Resets all user preferences and any data." />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="About">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="28.0" text="World's Best Dungeon Game with Absolutely Zero Coupling &#10;Issues&#10;&#10;Acknowledgements: world's most amazing starter code&#10;For licenses, see here&#10;&#10;&#10;Very stable alpha with absolutely 0 memory leaks&#10;(00001)&#10;&#10;Authors:&#10;Jonathan Liu&#10;Jason Qin&#10;" wrapText="true" />
+                        <Button fx:id="btnSoundLicenses" layoutX="14.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleSoundLicenses" text="View Licenses" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fx:id="imgTitle" fitHeight="56.0" fitWidth="200.0" layoutX="78.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/UI/txtSettings.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnClose" layoutX="286.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClose" text="Close" />
+   </children>
+</Pane>
