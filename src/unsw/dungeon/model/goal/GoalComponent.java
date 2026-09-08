@@ -6,9 +6,9 @@ import java.util.Iterator;
 
 /**
  * Stores a goal and methods associated with it.
- * <p>
+ *
  * Goals may be very abstract and associated with 'strand' type games.
- * <p>
+ *
  * Hence these may be called strand-type goals.
  */
 public interface GoalComponent {

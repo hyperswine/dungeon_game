@@ -23,5 +23,5 @@ public class DungeonPass extends Item{
     public String spriteFileName() {
         return "dungeon_pass.png";
     }
-    
+
 }

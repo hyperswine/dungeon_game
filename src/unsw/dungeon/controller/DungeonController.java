@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * Stores a <GridPane> and a <List> of images representing all the loaded
  * entities.
- * 
+ *
  * Also contains:
  *  - reference to the dungeon
  *  - reference to the goal controller
@@ -51,7 +51,7 @@ public class DungeonController {
     /**
      * Create a dungeon controller that contains the dungeon, and a list of initial
      * entities loaded from FXML. Contains the player and a Goal Controller.
-     * 
+     *
      */
     public DungeonController(Dungeon dungeon, List<ImageView> initialEntities, DungeonControllerLoader dCL,
             GoalController goalController, PlayerController pController, DungeonScreen dungeonScreen) {
@@ -72,7 +72,7 @@ public class DungeonController {
         }
 
         this.dungeonScreen = dungeonScreen;
-        goalController.goalsComplete().addListener(((observable, oldValue, newValue) -> endGame(false)));
+        goalController.goalsComplete().addListener((observable, oldValue, newValue) -> endGame(false));
         pController.setDungeonController(this);
     }
 
